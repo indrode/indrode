@@ -9,7 +9,7 @@ body {
 
 #header {
   padding:100px 0 50px 0;
-  background:url(images/px_by_Gre3g.png);
+  background-image:url('../images/px_by_Gre3g.png');
   background-repeat:true;
   border-bottom:1px solid #202020;
 }
@@ -23,6 +23,7 @@ body {
   color:#b0b0b0;
   font-size:16px;
   line-height:32px;
+  font-weight:300;
 }
 
 #footer {
