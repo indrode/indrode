@@ -44,7 +44,7 @@ p {
   color: #c8c8c8;
 }
 
-h1.indro {
+h1 {
   color:#fff;
   font-family: 'Lato';
   font-weight: 900;
@@ -53,12 +53,12 @@ h1.indro {
   text-transform: uppercase;
 }
 
-h1.indro span {
+h1 span {
   font-weight: 100;
 }
 
 
-h3.indro {
+h3 {
   color:#a0a0a0;
   font-family: 'Lato';
   font-weight: 400;
@@ -68,7 +68,7 @@ h3.indro {
   text-transform: uppercase;
 }
 
-h4.indro {
+h4 {
   color:#a0a0a0;
   font-family: 'Lato';
   font-weight: 400;
