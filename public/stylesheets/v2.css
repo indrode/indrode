@@ -2,11 +2,6 @@ body {
   background-color:#333;
 }
 
-.container {
-  width:960px;
-  margin:0 auto;
-}
-
 #header {
   padding:100px 0 50px 0;
   background-image:url('../images/px_by_Gre3g.png');
@@ -48,6 +43,7 @@ h1 {
   color:#fff;
   font-family: 'Lato';
   font-weight: 900;
+  line-height:38px;
   margin-bottom:5px;
   font-size:36px;
   text-transform: uppercase;
