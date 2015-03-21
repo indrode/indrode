@@ -1,0 +1,3 @@
+# indrode.com
+
+    rake deploy
