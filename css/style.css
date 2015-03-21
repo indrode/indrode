@@ -26,6 +26,10 @@ body, html {
   overflow-x: hidden;
 }
 
+small {
+  font-size:0.8em;
+}
+
 b {
   font-weight: 700;
 }
