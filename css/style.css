@@ -1,0 +1,95 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #243040;
+  font-size: 1.6rem;
+  font-family: "Merriweather", serif;
+  background-color: #444;
+  background-image: url('../img/footer_lodyas.png');
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+a {
+  color: #9cb3a8;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#fff; /* TODO: change this! */
+}
+
+main {
+  text-align: center;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  resize: vertical;
+  overflow: auto;
+}
+
+main #welcome {
+  position: absolute;
+  top: 40vh;
+  left: 20px;
+  right: 20px;
+  margin-top: -40px;
+}
+
+main #more-info {
+  position: absolute;
+  top: 30vh;
+  left: 20px;
+  right: 20px;
+  margin-top: -40px;
+}
+
+main h1, main p {
+  text-align: center;
+}
+main h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  margin-bottom: 1em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+main p {
+  padding-bottom:1.6rem;
+  color: #d6dfdb;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.avatar {
+  border: 1px solid #000;
+  background-color:#aaa;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  main h1 {
+    font-size: 4.6rem;
+  }
+  main p {
+    font-size: 2.4rem;
+  }
+}
