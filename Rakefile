@@ -1,5 +1,5 @@
 desc "Deploy to production"
 task :deploy do
   `rsync -avzh --exclude=.git $(pwd) tetsuo:~/`
-  puts "deployed!"
+  puts "Succesfully deployed to http://indrode.com/"
 end
