@@ -52,7 +52,7 @@ main {
   overflow: auto;
 }
 
-main #welcome {
+main#index {
   position: absolute;
   top: 40vh;
   left: 20px;
@@ -60,7 +60,7 @@ main #welcome {
   margin-top: -40px;
 }
 
-main #more-info {
+main#about {
   position: absolute;
   top: 30vh;
   left: 20px;
@@ -68,7 +68,7 @@ main #more-info {
   margin-top: -40px;
 }
 
-main #publications {
+main#publications {
   margin-top: 50px;
   padding: 0 2em;
 }
