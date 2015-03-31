@@ -1,6 +1,14 @@
 # Indro De
 
+To deploy this website:
+
     rake deploy
+
+This also uglifies any CSS styles in the `/css` folder. To manually uglify those files:
+
+    rake uglify
+
+This requires to have [https://github.com/fmarcia/UglifyCSS](https://github.com/fmarcia/UglifyCSS) installed.
 
 # License
 
