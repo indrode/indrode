@@ -45,11 +45,10 @@ a:hover {
 
 main {
   text-align: center;
-  height: 100vh;
   margin: 0 auto;
   position: relative;
   resize: vertical;
-  overflow: auto;
+  overflow: none;
 }
 
 main#index {
