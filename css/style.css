@@ -105,6 +105,9 @@ main p {
   main p {
     font-size: 1.8rem;
   }
+  main#about p {
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -113,6 +116,9 @@ main p {
   }
   main p {
     font-size: 2.4rem;
+  }
+  main#about p {
+    font-size: 2.2rem;
   }
 }
 
