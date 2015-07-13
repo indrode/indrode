@@ -43,6 +43,15 @@ a:hover {
   color:#fff; /* TODO: change this! */
 }
 
+hr {
+  width: 50%;
+  height: 1px;
+  background-color: #565656;
+  color: #565656;
+  border: 0;
+  margin-bottom: 30px;
+}
+
 main {
   text-align: center;
   margin: 0 auto;
@@ -65,6 +74,18 @@ main#about {
   left: 20px;
   right: 20px;
   margin-top: -40px;
+}
+
+main#projects {
+  position: absolute;
+  top: 10vh;
+  left: 20px;
+  right: 20px;
+  margin-top: -20px;
+}
+
+main#projects p {
+  font-size: 1.4rem;
 }
 
 main#publications {
