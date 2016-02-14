@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   # mount ActionCable.server => '/cable'
 
   root 'main#index'
+
+  get 'about' => 'main#about'
+  get 'projects' => 'main#projects'
 end
