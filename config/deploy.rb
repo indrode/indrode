@@ -10,6 +10,8 @@ set :repo_url, 'git@github.com:indrode/indrode.git'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/akira/indrode'
 
+set :chruby_ruby, 'ruby-2.2.3'
+
 # Default value for :scm is :git
 # set :scm, :git
 
@@ -20,7 +22,7 @@ set :deploy_to, '/home/akira/indrode'
 # set :log_level, :debug
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
