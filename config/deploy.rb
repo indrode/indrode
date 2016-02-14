@@ -24,6 +24,8 @@ set :chruby_ruby, 'ruby-2.2.3'
 # Default value for :pty is false
 set :pty, true
 
+set :puma_conf, "#{shared_path}/puma.rb"
+
 # Default value for :linked_files is []
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
