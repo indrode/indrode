@@ -48,3 +48,5 @@ namespace :deploy do
   end
 
 end
+
+after 'deploy:check', 'puma:check'
