@@ -28,7 +28,8 @@ Rails.application.configure do
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
-
+  config.serve_static_assets = true
+  config.action_dispatch.x_sendfile_header = nil
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
