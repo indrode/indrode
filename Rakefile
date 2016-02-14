@@ -1,16 +1,6 @@
-desc "Deploy to production"
-task :deploy do
-  uglify
-  `rsync -avzh --exclude=.git $(pwd) tetsuo:~/`
-  puts "Succesfully deployed to http://indrode.com/"
-end
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-desc "Uglify CSS files"
-task :uglify do
-  uglify
-  puts "Succesfully uglified stylesheets to css/styles.css"
-end
+require File.expand_path('../config/application', __FILE__)
 
-def uglify
-  `uglifycss css/*.css > css/styles.css`
-end
+Rails.application.load_tasks
