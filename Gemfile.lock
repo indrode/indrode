@@ -1,4 +1,12 @@
 GIT
+  remote: git@github.com:seuros/capistrano-puma.git
+  revision: 19a573e72e2f24029fe687537341f956ee9dfa9d
+  specs:
+    capistrano3-puma (1.2.2)
+      capistrano (~> 3.0)
+      puma (>= 2.6)
+
+GIT
   remote: https://github.com/rspec/rspec-core.git
   revision: ceecf84c222c2f6b0c1be9e139cb5510c23043be
   branch: master
@@ -103,9 +111,6 @@ GEM
     capistrano-rails (1.1.6)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
-    capistrano3-puma (1.2.1)
-      capistrano (~> 3.0)
-      puma (>= 2.6)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -229,7 +234,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-chruby
   capistrano-rails (~> 1.1)
-  capistrano3-puma
+  capistrano3-puma!
   coffee-rails (~> 4.1.0)
   database_cleaner
   factory_girl_rails
