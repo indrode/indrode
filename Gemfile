@@ -52,6 +52,8 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-chruby'
   gem 'capistrano3-puma', :git => 'git@github.com:seuros/capistrano-puma.git'
+  gem 'airbrussh', require: false
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
