@@ -23,7 +23,7 @@ require 'capistrano/puma'
 require 'capistrano/puma/workers'
 require 'capistrano/puma/nginx'
 require 'capistrano/rails/assets'
-require "airbrussh/capistrano"
+require 'airbrussh/capistrano'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
