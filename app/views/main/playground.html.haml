@@ -1,0 +1,11 @@
+%main#playground
+  %h1
+    Playground
+    = icon('flag')
+  %p I am a Software Engineer / Rubyist.
+  %p
+    %small
+      %a{:href => "/about/"} click here to learn more
+  %div{:style => "width: 906px; margin: 0 auto;"}
+    = pie_chart({"Football" => 10, "Basketball" => 5})
+    = line_chart({20.day.ago => 5, 1368174456 => 4, "2013-05-07 00:00:00 UTC" => 7})

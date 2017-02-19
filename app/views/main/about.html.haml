@@ -1,0 +1,34 @@
+%main#about
+  %p= image_tag 'robot_avatar.png', class: 'avatar', height: 64, weight: 64
+  %p
+  %p
+    I am a developer for
+    %strike simfy
+    = succeed '.' do
+      %a{:href => 'https://www.homeday.de'} Homeday
+    = succeed '.' do
+      I have been building web applications since the late 1990s
+  %p
+    I received my Computer Science degree from
+    = succeed ',' do
+      %a{:href => 'https://www.ursinus.edu'} Ursinus College
+    = succeed '.' do
+      where I did research in
+      %a{:href => 'https://lamentingrobot.com/publications'} textual data mining
+  %p
+    %small
+      %a{:href => 'mailto:mail@indrode.com'} Email
+      |
+      %a{:href => 'https://blog.indrode.com'} Blog
+      |
+      %a{:href => '/projects'} Portfolio
+      |
+      %a{:href => 'http://github.com/indrode'} GitHub
+      |
+      %a{:href => 'https://www.linkedin.com/in/indrode'} LinkedIn
+      %br/
+      %a{:href => 'https://twitter.com/zenpunch'} Twitter
+      |
+      %a{:href => 'http://last.fm/user/zenpunch'} Last.fm
+      |
+      %a{:href => 'https://keybase.io/indro'} Keybase

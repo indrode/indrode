@@ -1,0 +1,56 @@
+%main
+  .container
+    %h1 Movies
+
+    %p
+      = pie_chart(@movies_by_location)
+
+    #movies
+      %p
+        %input.search{:placeholder => "Search movies..."}/
+      / <ul class="pagination"></ul>
+      %table
+        / IMPORTANT, class="list" have to be at tbody
+        %thead
+          %th.id
+            %a.sort{"data-sort" => "id"} ID
+          %th.title
+            %a.sort{"data-sort" => "title"} Title
+          %th.year
+            %a.sort{"data-sort" => "year"} Year
+          %th.duration
+            %a.sort{"data-sort" => "duration"} Duration
+          %th.rating
+            %a.sort{"data-sort" => "rating"} Rating
+          %th.media
+            %a.sort{"data-sort" => "media"} Media
+          %th.location
+            %a.sort{"data-sort" => "location"} Location
+          %th.size
+            %a.sort{"data-sort" => "size"} Size
+        %tbody.list
+          - @movies.each do |movie|
+            %tr
+              %td.id= movie['id']
+              %td.title= movie['title']
+              %td.year.right= movie['year']
+              %td.duration.right= movie['duration_human']
+              %td.rating.nowrap!= "#{display_stars(movie['rating'])} (#{movie['rating'] || '0.0'})"
+              %td.audio.right= "#{movie['resolution']} #{movie['audio']}"
+              %td.location= movie['location']
+              %td.size.right
+                .hidden= movie['file_size']
+                = movie['file_size_human']
+:javascript
+  var options = {
+    valueNames: [ 'title', 'year', 'genre', 'duration', 'rating', 'size' ],
+    page: 2000
+    // plugins: [
+    //   ListPagination({
+    //     innerWindow: 1,
+    //     outerWindow: 1
+    //   })
+    // ]
+  };
+
+  var userList = new List('movies', options);
