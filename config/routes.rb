@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get 'about' => 'main#about'
   get 'projects' => 'main#projects'
+  get 'playground' => 'main#playground'
+  get 'movies' => 'main#movies'
 end
